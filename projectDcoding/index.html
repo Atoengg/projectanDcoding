@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asets/fonts/fonts.css">
+    <link rel="stylesheet" href="./asets/css/normalize.css">
+
+    <link rel="stylesheet" href="./asets/css/utility.css">
+    <link rel="stylesheet" href="./asets/css/style.css">
+    <link rel="stylesheet" href="./asets/css/responsive.css">
+    <title>Muncak-Yuk</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Muncak<span>Yuk</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fa fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#header" class="nav-link">Home</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#galeri" class="nav-link">Galeri</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="btn-toggle-dark">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar-->
+
+    <!-- Header -->
+    <header id="header" class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>mulai perjalanan <br> muncakmu sekarang<span>.</span></h1>
+                <p></p>
+            </div>
+            <div class="header-form">
+                <h2>Pilih Lokasi Muncakmu:</h2>
+                <form class="flex" action="">
+                    <input type="text" class="form-control" placeholder="nama gunung">
+                    <input type="date" class="form-control" placeholder="tanggal">
+                    <input type="number" class="form-control" placeholder="harga(Rp.)">
+                    <input type="submit" class="form-btn" value="search">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- akhir header -->
+
+    <!--section Galeri -->
+    <div id="galeri" class="py-4">
+        <div class="container">
+            <div class="galeri-row">
+                <div class="galeri-item shadow">
+                    <img src="./asets/images/galeri-1.jpg" alt="galeri img">
+                    <span class="zoom-icon">
+                        <i class="fa fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="galeri-item shadow">
+                    <img src="./asets/images/galeri-2.jpg" alt="galeri img">
+                    <span class="zoom-icon">
+                        <i class="fa fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="galeri-item shadow">
+                    <img src="./asets/images/galeri-3.jpg" alt="galeri img">
+                    <span class="zoom-icon">
+                        <i class="fa fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="galeri-item shadow">
+                    <img src="./asets/images/galeri-4.jpg" alt="galeri img">
+                    <span class="zoom-icon">
+                        <i class="fa fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="galeri-item shadow">
+                    <img src="./asets/images/galeri-5.jpg" alt="galeri img">
+                    <span class="zoom-icon">
+                        <i class="fa fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="galeri-item shadow">
+                    <img src="./asets/images/galeri-6.jpg" alt="galeri img">
+                    <span class="zoom-icon">
+                        <i class="fa fa-search-plus"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir section galeri -->
+    
+    <!-- img modul -->
+    <div id="img-modal-box">
+        <div id="img-modal">
+            <button type="button" id="modal-close-btn" class="flex">
+                <i class="fa fa-times"></i>
+            </button>
+            <button type="button" id="prev-btn" class="flex">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <button type="button" id="next-btn" class="flex">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+            <img src="./asets/images/galeri-1.jpg" alt="">
+        </div>
+    </div>
+    <!-- akhir img modul -->
+
+    <!--section about -->
+    <section class="py-4" id="about">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">
+                    things to know
+                </span>
+                <h2 class="lg-title"> 
+                    Tentang kami
+                </h2>
+            </div>
+
+            <div class="about-row">
+                <div class="about-left my-2">
+                    <img src="./asets/images/galeri-9.jpg" alt="">
+                </div>
+                <div class="about-right">
+                    <h2>berpengalaman 15 tahun</h2>
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ipsum harum vel ad aliquam omnis iste distinctio? Quas id, suscipit cumque vel porro sed velit officia iusto modi, natus temporibus?</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempora deleniti quidem quisquam deserunt commodi quis nobis dolore corrupti quam sequi iusto ullam odit autem fuga, animi nemo consequuntur temporibus?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section about -->
+
+    <!-- section fakta -->
+    <section id="fakta" class="py-4 flex">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">
+                    ketahui fakta tentang kami
+                </span>
+                <h2 class="lg-title">
+                    fun facts
+                </h2>
+            </div>
+
+            <div class="fakta-row">
+                <div class="fakta-item">
+                    <span class="fa fa-camera-retro fakta-icon"></span>
+                    <div class="fakta-info">
+                        <strong>1220</strong>
+                        <p class="text">ambil foto</p>
+                    </div>
+                </div>
+                <div class="fakta-item">
+                    <span class="fa fa-briefcase fakta-icon"></span>
+                    <div class="fakta-info">
+                        <strong>1420</strong>
+                        <p class="text">tas carier</p>
+                    </div>
+                </div>
+                <div class="fakta-item">
+                    <span class="fa fa-compass fakta-icon"></span>
+                    <div class="fakta-info">
+                        <strong>89</strong>
+                        <p class="text">kompas</p>
+                    </div>
+                </div>
+                <div class="fakta-item">
+                    <span class="fa fa-fire fakta-icon"></span>
+                    <div class="fakta-info">
+                        <strong>1000</strong>
+                        <p class="text">api unggun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section fakta -->
+    
+    <!-- section featured -->
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Know about some places before your travel</span>
+                <h2 class="lg-title">featured place</h2>
+            </div>
+
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="./asets/images/sumeru.jpg" alt="gunung sumeru">
+                    <div class="featured-item-content">
+                        <span><i class="fa fa-map-marker-alt"></i>
+                            Gunung Sumeru, Lumajang 
+                        </span>
+                        <div class="text">
+                            sebuah gunung berapi kerucut di Jawa Timur, Indonesia. Gunung Semeru merupakan gunung tertinggi di Pulau Jawa, dengan puncaknya Mahameru, 3.676 meter dari permukaan laut.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="./asets/images/arjuna.jpg" alt="gunung sumeru">
+                    <div class="featured-item-content">
+                        <span><i class="fa fa-map-marker-alt"></i>
+                            Gunung Arjuna, Tretes, Mojokerto 
+                        </span>
+                        <div class="text">
+                            sebuah gunung berapi kerucut (istirahat) di Jawa Timur, Indonesia dengan ketinggian 3.339 m dpl. Gunung Arjuno secara administratif terletak di perbatasan Kota Batu, Kabupaten Malang, dan Kabupaten Pasuruan.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="./asets/images/buthak.jpg" alt="gunung sumeru">
+                    <div class="featured-item-content">
+                        <span><i class="fa fa-map-marker-alt"></i>
+                            Gunung Buthak, Malang 
+                        </span>
+                        <div class="text">
+                            adalah gunung stratovolcano yang terletak di perbatasan Kabupaten Malang dan Kabupaten Blitar, Jawa Timur, Indonesia. Gunung Butak terletak berdekatan dengan Gunung Kawi.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="./asets/images/penanggungan.jpg" alt="gunung sumeru">
+                    <div class="featured-item-content">
+                        <span><i class="fa fa-map-marker-alt"></i>
+                            Gunung Penanggungan, Mojokerto 
+                        </span>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et magnam dignissimos omnis aspernatur tenetur provident cum a nihil necessitatibus suscipit cupiditate fuga ratione neque, at porro quidem quibusdam hic!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="./asets/images/raung.jpg" alt="gunung sumeru">
+                    <div class="featured-item-content">
+                        <span><i class="fa fa-map-marker-alt"></i>
+                            Gunung Raung, Bondowoso 
+                        </span>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et magnam dignissimos omnis aspernatur tenetur provident cum a nihil necessitatibus suscipit cupiditate fuga ratione neque, at porro quidem quibusdam hic!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="./asets/images/arogopuro.jpg" alt="gunung sumeru">
+                    <div class="featured-item-content">
+                        <span><i class="fa fa-map-marker-alt"></i>
+                            Gunung Argopuro, Bondowoso 
+                        </span>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et magnam dignissimos omnis aspernatur tenetur provident cum a nihil necessitatibus suscipit cupiditate fuga ratione neque, at porro quidem quibusdam hic!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section featured -->
+    
+    <!-- section contact -->
+    <section id="contact" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <h2 class="lg-title">contact us</h2>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-left">
+                    <div class="card">
+                        <figure>
+                            <img src="./asets/images/irham.png" alt="Foto Profil">
+                        </figure>
+                        <p class="name">Moh Irham Alkarim</p>
+                        <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut animi et accusamus reiciendis sit, voluptatum quos asperiores laudantium ipsam neque deserunt? Eum, commodi maxime animi fugit at accusantium aliquid.</p>
+                        <p class="role">WEB DEVELOPER</p>
+                        <div class="separator"></div>
+                        <div class="social-container">
+                            <button>
+                                <a href="https://github.com/Atoengg"><i class="fab fa-github"></i></a>
+                            </button>
+                            <button>
+                                <a href="https://www.facebook.com/bersatu.dalamdamai.3192"><i class="fab fa-facebook"></i></a>
+                            </button>
+                            <button>
+                                <a href="https://wa.me/6282141598507"><i class="fab fa-whatsapp"></i></a>
+                            </button>
+                            <button>
+                                <a href="https://www.instagram.com/atoengg/"><i class="fab fa-instagram"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right my-2">
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-phone-alt"></i>
+                        </span>
+                        <div>
+                            <span>Telepon</span>
+                            <p class="text">+821-4124-812</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-map-marked-alt"></i>
+                        </span>
+                        <div>
+                            <span>Alamat</span>
+                            <p class="text">Jl.Ahmad Yani 12 Gresik</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <div>
+                            <span>Email</span>
+                            <p class="text">kromosom06@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section contact -->
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Muncak<span>Yuk</span>
+                </a>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque architecto assumenda harum accusantium animi rerum temporibus, sequi molestias quasi cum neque non incidunt impedit beatae iste modi dolores consequatur error.
+                </p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Ikuti kita:</h2>
+                <ul class="media-sosial-link">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Gunung Terpopuler:</h2>
+                <ul>
+                    <li><a href="#">Gunung Sumeru</a></li>
+                    <li><a href="#">Gunung Raung</a></li>
+                    <li><a href="#">Gunung penanggungan</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>subscribe for Newsletter:</h2>
+                <form action="" class="flex">
+                    <input type="email" placeholder="masukan Email" class="form-control">
+                    <input type="submit" class="form-btn" value="simpan">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+
+
+    <!-- javascript -->
+    <script src="./asets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
